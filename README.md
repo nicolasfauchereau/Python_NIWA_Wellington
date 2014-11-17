@@ -119,6 +119,7 @@ $ pip install folium
 
 The material of the tutorial is in the form of [IPython notebooks](http://ipython.org/notebook.html). In a nutshell an IPython notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, mathematics, plots and rich media into a single document, which makes it an ideal medium for teaching and exploring.
 
+
 After uncompressing the archive of the repo (or after cloning it with ```git```), navigate to the corresponding directory (containing the ```*.ipynb``` files) and type:
 
 ```
@@ -127,8 +128,4 @@ $ ipython notebook
 
 That should bring up the IPython notebook dashboard, you should be ready to go !
 
-## Links to the static version of the notebooks
-
-Below are links to the static, HTML-rendered version of the tutorial notebooks (thanks to [http://nbviewer.ipython.org/](http://nbviewer.ipython.org/)):
-
-The notebooks on the IPython notebook widgets and the one on creating interactive plots in the browser need to be run.
+You should see in particular a ```test.ipynb``` notebook: please run it to make sure all the necessary libraries have been installed correctly. If you followed the instructions above (install the [anaconda python distribution](http://continuum.io/downloads)) it should be fine, this test notebook is mostly intended for those who have a *custom* python installation.
