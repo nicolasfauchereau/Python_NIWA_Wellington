@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Python niwa wellington by nicolasfauchereau</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Python niwa wellington</h1>
+          <h2>Python tutorial, NIWA Wellington, November 2014</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/nicolasfauchereau/Python_NIWA_Wellington/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/nicolasfauchereau/Python_NIWA_Wellington/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/nicolasfauchereau/Python_NIWA_Wellington" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="niwa-python-tutorial" class="anchor" href="#niwa-python-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>NIWA python tutorial</h1>
+
+<p>Wellington, Monday 24 November 2014 </p>
+
+<p>Contact: <a href="mailto:Nicolas.Fauchereau@gmail.com">Nicolas Fauchereau</a></p>
+
+<h2></h2>
+
+<h3>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of contents</h3>
+
+<ul>
+<li><a href="#the-anaconda-python-distribution">The Anaconda python distribution</a></li>
+<li>
+<a href="#installation-of-additional-libraries">Installation of additional libraries</a>
+
+<ul>
+<li><a href="#basemap">Basemap</a></li>
+<li><a href="#bokeh">Bokeh</a></li>
+<li><a href="#seaborn">Seaborn</a></li>
+<li><a href="#mplD3">mplD3</a></li>
+<li><a href="#bearcart">bearcart</a></li>
+<li><a href="#folium">folium</a></li>
+</ul>
+</li>
+<li><a href="#running-the-ipython-notebooks">Running the IPython notebooks</a></li>
+<li><a href="#links-to-the-static-version-of-the-notebooks">Links to the static version of the notebooks</a></li>
+</ul>
+
+<h2>
+<a id="the-anaconda-python-distribution" class="anchor" href="#the-anaconda-python-distribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Anaconda python distribution</h2>
+
+<p>For this tutorial, I recommend installing the <strong>Anaconda Python distribution</strong>. It is a completely free enterprise-ready Python distribution for large-scale data processing, predictive analytics, and scientific computing. It includes the python interpreter itself, the python standard library as well as a set of packages exposing data structures and methods for data manipulation and scientific computing and visualization. In particular it provides <a href="http://www.numpy.org/">Numpy</a>, <a href="http://www.scipy.org/">Scipy</a>, <a href="http://pandas.pydata.org/">Pandas</a>, <a href="http://matplotlib.org/">Matplotlib</a>, <a href="http://scikit-learn.org/stable/">scikit-learn</a> and <a href="http://statsmodels.sourceforge.net/">statmodels</a>, i.e. all the main packages we will be using during the tutorial. The full list of packages is available at:</p>
+
+<p><a href="http://docs.continuum.io/anaconda/pkgs.html">http://docs.continuum.io/anaconda/pkgs.html</a></p>
+
+<p>The Anaconda python distribution must be downloaded from:</p>
+
+<p><a href="http://continuum.io/downloads">http://continuum.io/downloads</a></p>
+
+<p>For your platform.</p>
+
+<p>Once you have installed Anaconda, you can update to the latest compatible versions of all the pre-installed packages by running:</p>
+
+<pre><code>$ conda update conda
+</code></pre>
+
+<p>Then</p>
+
+<pre><code>$ conda update anaconda
+</code></pre>
+
+<p>In a terminal.</p>
+
+<p>You also need to install <a href="https://github.com/pypa/pip">pip</a> to install packages from the <a href="http://pypi.python.org/pypi">Python Package Index</a>.</p>
+
+<pre><code>$ conda install pip
+</code></pre>
+
+<h2>
+<a id="installation-of-additional-libraries" class="anchor" href="#installation-of-additional-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation of additional libraries</h2>
+
+<p>While we might not have the time to cover them in depth during the tutorial, I would recommend that you have a look at a few extra libraries.</p>
+
+<h3>
+<a id="basemap" class="anchor" href="#basemap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basemap</h3>
+
+<p><strong>Basemap</strong> is a graphic library for plotting (static, publication quality) geographical maps (see <a href="http://matplotlib.org/basemap/">http://matplotlib.org/basemap/</a>). <strong>Basemap</strong> is available directly in <strong>Anaconda</strong> using the conda package manager, install with:</p>
+
+<pre><code>$ conda install basemap
+</code></pre>
+
+<h3>
+<a id="bokeh" class="anchor" href="#bokeh" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bokeh</h3>
+
+<p><a href="">Bokeh</a> is a new interactive plotting library developed by the team behind <strong>anaconda</strong>: it is thus installable with conda (if not already installed):</p>
+
+<pre><code>$ conda install bokeh
+</code></pre>
+
+<h3>
+<a id="seaborn" class="anchor" href="#seaborn" aria-hidden="true"><span class="octicon octicon-link"></span></a>Seaborn</h3>
+
+<p><a href="http://web.stanford.edu/%7Emwaskom/software/seaborn/">seaborn</a> is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics. You should be able to install it with <code>pip</code>:</p>
+
+<pre><code>$ pip install seaborn
+</code></pre>
+
+<p>or (if you want the bleeding edge version):</p>
+
+<pre><code>$ pip install git+git://github.com/mwaskom/seaborn.git#egg=seaborn
+</code></pre>
+
+<p>You may have to install 2 additional libraries for seaborn, <code>husl</code> and <code>moss</code>. If you experience failures during <code>seaborn</code> installation or when trying to import it, tr:  </p>
+
+<pre><code>$ pip install husl
+$ pip install moss
+</code></pre>
+
+<h3>
+<a id="mpld3" class="anchor" href="#mpld3" aria-hidden="true"><span class="octicon octicon-link"></span></a>mplD3</h3>
+
+<p><a href="http://mpld3.github.io/">mplD3</a> aims at <em>bringing matplotlib to the browser</em>. It has been developed by Jake VanDerPlas. It is also installable by <code>pip</code>:</p>
+
+<pre><code>$ pip install mpld3
+</code></pre>
+
+<h3>
+<a id="bearcart" class="anchor" href="#bearcart" aria-hidden="true"><span class="octicon octicon-link"></span></a>bearcart</h3>
+
+<p><a href="https://github.com/wrobstory/bearcart">bearcart</a> has been developed by <a href="http://wrobstory.github.io/">Rob Story</a> and provides an interface to the rickshaw JavaScript library. It is also installable via <code>pip</code>:</p>
+
+<pre><code>$ pip install bearcart
+</code></pre>
+
+<h3>
+<a id="folium" class="anchor" href="#folium" aria-hidden="true"><span class="octicon octicon-link"></span></a>folium</h3>
+
+<p><a href="https://github.com/wrobstory/folium">folium</a>  has been also been developed by <a href="http://wrobstory.github.io/">Rob Story</a> to provide an interface to the <a href="http://leafletjs.com/">leaflet.js</a> JavaScript mapping library. Install with:</p>
+
+<pre><code>$ pip install folium
+</code></pre>
+
+<h2>
+<a id="running-the-ipython-notebooks" class="anchor" href="#running-the-ipython-notebooks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running the IPython notebooks</h2>
+
+<p>The material of the tutorial is in the form of <a href="http://ipython.org/notebook.html">IPython notebooks</a>. In a nutshell an IPython notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, mathematics, plots and rich media into a single document, which makes it an ideal medium for teaching and exploring.</p>
+
+<p>After uncompressing the archive of the repo (or after cloning it with <code>git</code>), navigate to the corresponding directory (containing the <code>*.ipynb</code> files) and type:</p>
+
+<pre><code>$ ipython notebook
+</code></pre>
+
+<p>That should bring up the IPython notebook dashboard, you should be ready to go !</p>
+
+<h2>
+<a id="links-to-the-static-version-of-the-notebooks" class="anchor" href="#links-to-the-static-version-of-the-notebooks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links to the static version of the notebooks</h2>
+
+<p>Below are links to the static, HTML-rendered version of the tutorial notebooks (thanks to <a href="http://nbviewer.ipython.org/">http://nbviewer.ipython.org/</a>):</p>
+
+<p>The notebooks on the IPython notebook widgets and the one on creating interactive plots in the browser need to be run.</p>
+        </section>
+
+        <footer>
+          Python niwa wellington is maintained by <a href="https://github.com/nicolasfauchereau">nicolasfauchereau</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
