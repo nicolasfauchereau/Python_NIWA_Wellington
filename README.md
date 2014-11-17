@@ -1,6 +1,6 @@
 # NIWA python tutorial
 
-Wellington, Monday 24 November 2014 
+Wellington, Wednesday 26 November 2014 
 
 Contact: [Nicolas Fauchereau](mailto:Nicolas.Fauchereau@gmail.com)
 
