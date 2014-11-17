@@ -83,7 +83,7 @@ or (if you want the bleeding edge version):
 $ pip install git+git://github.com/mwaskom/seaborn.git#egg=seaborn
 ```
 
-You may have to install 2 additional libraries for seaborn, `husl` and `moss`. If you experience failures during `seaborn` installation or when trying to import it, tr:  
+You may have to install 2 additional libraries for seaborn, `husl` and `moss`. If you experience failures during `seaborn` installation or when trying to import it, try:  
 
 ```
 $ pip install husl
