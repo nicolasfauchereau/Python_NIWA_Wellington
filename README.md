@@ -115,6 +115,8 @@ $ pip install bearcart
 $ pip install folium
 ```
 
+<hr size=5>
+
 ## Running the IPython notebooks
 
 The material of the tutorial is in the form of [IPython notebooks](http://ipython.org/notebook.html). In a nutshell an IPython notebook is a web-based (i.e. running in the browser) interactive computational environment where you can combine Python code execution, text, mathematics, plots and rich media into a single document, which makes it an ideal medium for teaching and exploring.
