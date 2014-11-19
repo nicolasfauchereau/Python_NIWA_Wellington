@@ -72,27 +72,15 @@ $ conda install bokeh
 
 ### Seaborn
 
-[seaborn](http://web.stanford.edu/~mwaskom/software/seaborn/) is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics. You should be able to install it with ```pip```:
+[seaborn](http://web.stanford.edu/~mwaskom/software/seaborn/) is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics. You should be able to install it with ```conda``` as well:
 
 ```
-$ pip install seaborn
-```
-or (if you want the bleeding edge version):
-
-```
-$ pip install git+git://github.com/mwaskom/seaborn.git#egg=seaborn
-```
-
-You may have to install 2 additional libraries for seaborn, `husl` and `moss`. If you experience failures during `seaborn` installation or when trying to import it, try:  
-
-```
-$ pip install husl
-$ pip install moss
+$ conda install seaborn
 ```
 
 ### mplD3
 
-[mplD3](http://mpld3.github.io/) aims at *bringing matplotlib to the browser*. It has been developed by Jake VanDerPlas. It is also installable by ```pip```:
+[mplD3](http://mpld3.github.io/) aims at *bringing matplotlib to the browser*. It has been developed by Jake VanDerPlas. It is also by ```pip```:
 
 ```
 $ pip install mpld3
